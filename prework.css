@@ -1,0 +1,66 @@
+/*Below is heading 1*/
+h1 {
+    color:blue;
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+}
+.color {
+    text-align:left;
+    color:blue;
+}
+#center {
+    text-align:center;
+}
+[href] {
+    font-weight: bold;
+}
+p, h1, h2, h3, ul {
+    font-family:'Times New Roman';
+}
+.border {
+    border:solid 5px #87CEEB;
+    border-radius:7px;
+}
+h3 {
+    font-family:Arial;
+}
+a:hover {
+    color:purple;
+}
+html {
+    background-color:#787ae2;
+}
+pre {
+    font-family:Arial;
+    text-align:center;
+    color:black;
+    font-size: 20px;
+}
+p, ul {
+    font-size:20px;
+}
+h2,h3,h4 {
+    font-size:30px;
+    font-weight:bold;
+}
+blockquote {
+    font-size:20px;
+}
+
+    
+
+    
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
