@@ -5,6 +5,8 @@
 
 body {
   background-image:url("backgroundImage.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 nav {
@@ -81,7 +83,7 @@ nav {
 
 .profilePic {
   border-radius: 50%;
-  width:120px;
+  width:130px;
   border:solid 5px blue;
   margin-left:1%;
 }
@@ -103,24 +105,26 @@ h1 {
   margin-bottom:25px;
 }
 
-
 #toolboxContainer {
   display:flex;
+  margin-left:25%;
+  margin-right:25%;
+
 }
 
 .toolboxPic {
-  flex:1;
-  height:150px;
   border:solid 2px blue;
   padding:5%;
-  margin-left:200%;
-
 }
 
 .toolboxPic:hover {
   border-color:yellow;
 }
 
+.toolboxDiv {
+  flex:1;
+  margin:2%;
+}
 
 #portfolioContainer {
   display:flex;
