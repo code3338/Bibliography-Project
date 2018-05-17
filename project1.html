@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="project1.css">
   </head>
   <body>
     <header>
-      <nav>
-        <div class="navDiv">
-          <a href="#biographyTarget" id="bio" class="link">Bio</a>
+      <div id="iconDiv">
+        <i id="icon" class="fas fa-align-justify" display="none"></i>
+      </div>
+      <nav id="mainNav">
+        <div class="navDiv" id="bioNav">
+          <a href="#biographyTarget" class="link">Bio</a>
         </div>
         <div class="navDiv">
           <a href="#toolboxTarget" id="toolboxLink" class="link">Toolbox</a>
         </div>
-        <div class="navDiv">
+        <div class="navDiv" id="portfolioDiv">
           <a href="#portfolioTarget" id="portfolio" class="link">Portfolio</a>
         </div>
         <div class="navDiv">
@@ -29,10 +33,12 @@
       </nav>
     </header>
     <main>
-      <a name="biographyTarget"></a>
-      <p id="bioHeading">Biography:</p>
       <div id="profilePicandBioContainer">
-        <h1>Melissa Coppola</h1>
+        <a name="biographyTarget"></a>
+        <h2 id="bioHeading">Biography:</h2>
+        <div id="nameDiv">
+          <h1 id="name">Melissa Coppola</h1>
+        </div>
       <div class="profilePicContainer">
         <div class="profilePicDiv">
           <img src="https://scontent.fmkc1-1.fna.fbcdn.net/v/t1.0-9/12509787_10153893178129295_3070149410710345107_n.jpg?_nc_cat=0&oh=c7cb9005426e8428946924b91b052e6b&oe=5B65DE42" class="profilePic"/>
@@ -104,5 +110,7 @@
           </div>
         </div>
     </main>
+    <script src="project1.js">
+    </script>
   </body>
 </html>

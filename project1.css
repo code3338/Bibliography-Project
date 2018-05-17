@@ -3,14 +3,23 @@
   box-sizing:border-box;
 }
 
+#bioNav {
+  text-align:center;
+}
+
 body {
   background-image:url("backgroundImage.jpg");
   background-repeat:no-repeat;
   background-size:cover;
 }
 
+main {
+  margin-top:55px;
+}
+
 nav {
   position:fixed;
+  width:100%;
   top:0px;
   display:flex;
   padding-left:65%;
@@ -20,7 +29,8 @@ nav {
 }
 
 .navDiv {
-  flex:15%;
+  flex:1;
+  padding:2%;
 }
 
 #bioHeading {
@@ -29,28 +39,16 @@ nav {
   font-weight:bold;
   color:black;
 }
+
 .link {
   font-size: 20px;
-  width:50%;
   margin-left:0px;
   font-weight:bold;
 }
 
-#icon1 {
-  margin-left: 20%;
-  margin-top:5%;
-}
-
-#icon2 {
-  margin-left:2%;
-  margin-top:0%;
+#icon1, #icon2, #icon3 {
   width:70%;
   vertical-align:top;
-}
-
-#icon3 {
-  margin-left:0%;
-  margin-top:7%;
 }
 
 #bio {
@@ -78,7 +76,6 @@ nav {
   flex:9%;
   margin-top:2%;
   padding-left:3%;
-
 }
 
 .profilePic {
@@ -109,7 +106,6 @@ h1 {
   display:flex;
   margin-left:25%;
   margin-right:25%;
-
 }
 
 .toolboxPic {
@@ -135,10 +131,6 @@ h1 {
   width:200px;
 }
 
-#portfolioContainer {
-  display:flex;
-}
-
 .portfolioDiv {
   flex:1;
   width:30%;
@@ -154,4 +146,410 @@ a:hover {
 }
 .screenshotImage:hover {
   border-color:green;
+}
+
+@media (max-width:320px) {
+  #iconDiv {
+    position:absolute;
+    right:0px;
+    top:0;
+    margin: 1% 1% 2% 2%;
+    z-index:2;
+    font-size:2em;
+  }
+  #icon1, #icon2, #icon3 {
+    width:40px;
+  }
+  .navDiv {
+    text-align:center;
+    border:solid 2px blue;
+    z-index:2;
+    background-color:#3333FF;
+  }
+  .navDiv a {
+    text-decoration-line:none;
+  }
+  .navDiv:hover {
+    background-color: #9900cc;
+  }
+  main {
+    margin-top:40px;
+  }
+  nav {
+    padding-left:0%;
+    margin:0%;
+    height:42px;
+  }
+  #name {
+    margin-bottom:0px;
+  }
+  #bio {
+    display:block;
+    margin:auto;
+  }
+  .link {
+    font-size:20px;
+  }
+  .profilePicContainer {
+    display:block;
+    border:none;
+    padding-top:40px;
+    padding-bottom:12px;
+  }
+  .profilePicDiv {
+    width:159px;
+    margin:auto;
+    margin-top:0px;
+    margin-bottom:30px;
+    padding-left:0px
+    padding:2px;
+  }
+  .profilePic {
+    margin:auto;
+  }
+  h1 {
+    position:static;
+    text-align:center;
+    display:block;
+  }
+  #toolboxContainer {
+    display:block;
+    margin:auto;
+    width:175px;
+  }
+  .toolboxPic {
+    border:solid 2px blue;
+    padding:5%;
+  }
+  .toolboxPic:hover {
+    border-color:yellow;
+  }
+  .toolboxDiv {
+    margin:auto;
+    margin-bottom:5%;
+    width:125px;
+  }
+  #portfolioContainer {
+    margin:auto;
+    width:175px;
+    display:block;
+  }
+  #portfolioScreenshot1 {
+    position:relative;
+    width:150px;
+  }
+  .portfolioDiv {
+    width:150px;
+    text-align:center;
+  }
+}
+
+@media (min-width:320px) {
+  #iconDiv {
+    position:absolute;
+    right:0px;
+    top:0;
+    margin: 1% 1% 2% 2%;
+    z-index:2;
+    font-size:2em;
+  }
+  #icon1, #icon2, #icon3 {
+    width:40px;
+  }
+  .navDiv {
+    text-align:center;
+    border:solid 2px blue;
+    z-index:2;
+    background-color:#3333FF;
+  }
+  .navDiv a {
+    text-decoration-line:none;
+  }
+  .navDiv:hover {
+    background-color: #9900cc;
+  }
+  nav {
+    padding-left:0%;
+    margin:0%;
+    height:42px;
+  }
+  #name {
+    margin-bottom:0px;
+  }
+  #bio {
+    display:block;
+    margin:auto;
+    margin:0px 20px;
+  }
+  .link {
+    font-size:20px;
+  }
+  .profilePicContainer {
+    display:block;
+    border:none;
+    padding-top:40px;
+    padding-bottom:12px;
+  }
+  .profilePicDiv {
+    width:159px;
+    margin:auto;
+    margin-top:0px;
+    margin-bottom:30px;
+    padding-left:0px
+    padding:2px;
+  }
+  .profilePic {
+    margin:auto;
+  }
+  h1 {
+    position:static;
+    text-align:center;
+    display:block;
+  }
+  #toolboxContainer {
+    display:block;
+    margin:auto;
+    width:175px;
+  }
+  .toolboxPic {
+    border:solid 2px blue;
+    padding:5%;
+  }
+  .toolboxPic:hover {
+    border-color:yellow;
+  }
+  .toolboxDiv {
+    margin:auto;
+    margin-bottom:5%;
+    width:125px;
+  }
+  #portfolioContainer {
+    margin:auto;
+    width:175px;
+    display:block;
+  }
+  #portfolioScreenshot1 {
+    position:relative;
+    width:150px;
+  }
+  .portfolioDiv {
+    width:150px;
+    margin-bottom:23px;
+    text-align:center;
+  }
+}
+
+@media (min-width:768px) {
+  #iconDiv {
+    z-index:0;
+    font-size:2em;
+  }
+  #icon1, #icon2, #icon3 {
+    width:30px;
+  }
+  nav {
+    padding-left:45%;
+    margin:0%;
+    height:47px;
+  }
+  .navDiv {
+    flex:1;
+    padding:2%;
+    text-align:center;
+    border:none;
+    z-index:0;
+    background-color:transparent;
+  }
+  .navDiv a {
+    text-decoration-line:underline;
+  }
+  .navDiv:hover {
+    background-color:transparent;
+  }
+  #bioHeading {
+    margin-top:5%;
+    font-size:24px;
+    font-weight:bold;
+    color:black;
+  }
+  .link {
+    font-size: 20px;
+    margin-left:0px;
+    font-weight:bold;
+  }
+  #nameDiv {
+    width:270px;
+    margin-left:0px;
+  }
+  #name {
+    text-align:center;
+  }
+  .link {
+    font-size:20px;
+  }
+  .profilePicContainer {
+    display:flex;
+    padding-top:40px;
+    padding-bottom:12px;
+  }
+  .profilePicDiv {
+    flex:1;
+    margin-top:2%;
+    text-align:center;
+    height:250px;
+    padding:0px;
+  }
+  .profilePic {
+    border-radius: 50%;
+    width:125px;
+    border:solid 5px blue;
+    margin:auto;
+  }
+  #bio {
+    flex:3;
+    margin:0px 20px;
+    border:solid 3px yellow;
+    border-radius:2%;
+  }
+
+  h1 {
+    position:static;
+    text-align:center;
+    display:block;
+  }
+  #toolboxContainer {
+    display:flex;
+    margin:auto;
+    width:80%;
+  }
+  .toolboxPic {
+    border:solid 2px blue;
+    padding:5%;
+  }
+  .toolboxDiv {
+    flex:1;
+    margin:auto;
+    margin:12px;
+    margin-bottom:5%;
+  }
+  #portfolioContainer {
+    margin:auto;
+    width:80%;
+    display:flex;
+  }
+  #portfolioScreenshot1 {
+    position:relative;
+    width:200px;
+  }
+  .portfolioDiv {
+    flex:1;
+    margin:12px;
+    margin-bottom:23px;
+    text-align:center;
+  }
+}
+
+@media (min-width: 960px) {
+  nav {
+    padding-left:55%;
+    margin:0%;
+    height:47px;
+  }
+  #toolboxContainer {
+    display:flex;
+    margin:auto;
+    width:65%;
+  }
+  #portfolioContainer {
+    margin:auto;
+    width:80%;
+    display:flex;
+  }
+  .portfolioDiv {
+    flex:1;
+    margin:20px;
+    margin-bottom:23px;
+    text-align:center;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding-left:65%;
+    margin:0%;
+    height:47px;
+  }
+  #nameDiv {
+    width:100%;
+    margin-left:0px;
+    padding-left:4%;
+  }
+  #name {
+    text-align:left;
+  }
+  h2 {
+    margin-left:15px;
+  }
+  .profilePicContainer {
+    display:flex;
+    padding:40px 2px 12px 2px;
+    width:1125px;
+    margin:auto;
+  }
+  .profilePicDiv {
+    flex:1;
+    margin-top:2%;
+    text-align:center;
+    height:250px;
+    padding:0px;
+  }
+  .profilePic {
+    border-radius:50%;
+    width:125px;
+    border:solid 5px blue;
+    margin:auto;
+  }
+  #toolboxContainer {
+    display:flex;
+    margin:auto;
+    width:53%;
+  }
+  #portfolioContainer {
+    margin:auto;
+    width:80%;
+    display:flex;
+  }
+  .portfolioDiv {
+    flex:1;
+    margin:20px;
+    margin-bottom:23px;
+    text-align:center;
+  }
+}
+
+@media (min-width: 1400px) {
+  #nameDiv {
+    width:100%;
+    margin-left:0px;
+    padding-left:7%;
+  }
+  #name {
+    text-align:left;
+  }
+  #toolboxContainer {
+    display:flex;
+    margin:auto;
+    width:45%;
+  }
+  #portfolioContainer {
+    margin:auto;
+    width:80%;
+    display:flex;
+  }
+  .portfolioDiv {
+    flex:1;
+    margin:20px;
+    margin-bottom:23px;
+    text-align:center;
+  }
 }
